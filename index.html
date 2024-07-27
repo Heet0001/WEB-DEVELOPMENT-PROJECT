@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Hotel Room Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="wallhaven-yjzp2k.png" alt="Background Image">
+        <section class="pricing-section">
+            <div class="toggle-container">
+                <label for="pricing-toggle" class="toggle-label">Switch to weekly</label>
+                <input type="checkbox" id="pricing-toggle" class="pricing-toggle">
+            </div>
+            <div class="pricing-table">
+                <div class="pricing-card" data-nightly-price="5000" data-weekly-price="25000">
+                    <h3>Standard Room</h3>
+                    <p class="price">5000₹/night</p>
+                    <ul>
+                        <li>1 Queen Bed</li>
+                        <li>Free WiFi</li>
+                        <li>Air Conditioning</li>
+                    </ul>
+                    <button class="btn" data-room-type="standard">Select</button>
+                </div>
+                <div class="pricing-card popular" data-nightly-price="6000" data-weekly-price="30000">
+                    <h3>Deluxe Room</h3>
+                    <p class="price">6000₹/night</p>
+                    <ul>
+                        <li>1 King Bed</li>
+                        <li>Free WiFi</li>
+                        <li>Air Conditioning</li>
+                        <li>Minibar</li>
+                    </ul>
+                    <button class="btn" data-room-type="deluxe">Select</button>
+                </div>
+                <div class="pricing-card" data-nightly-price="7000" data-weekly-price="35000">
+                    <h3>Suite</h3>
+                    <p class="price">7000₹/night</p>
+                    <ul>
+                        <li>1 King Bed</li>
+                        <li>Free WiFi</li>
+                        <li>Air Conditioning</li>
+                        <li>Minibar</li>
+                        <li>Living Area</li>
+                    </ul>
+                    <button class="btn" data-room-type="suite">Select</button>
+                </div>
+            </div>
+            <div class="bottom-section">
+                <div class="total-cost">
+                    <h3>Total Cost: <span id="total-cost">0</span>₹</h3>
+                </div>
+                <a href="#" class="pay-now-btn">Pay Now</a>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
